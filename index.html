@@ -100,10 +100,10 @@
         let sec = date.getSeconds()
         let week = date.getDay()
         if (hr > 12) {
-            print.innerHTML = `${value(hr % 12 || 12)}:${value(min)}:${value(sec)} <sub style="font-size:1.5rem">AM</sub>`
+            print.innerHTML = `${value(hr % 12 || 12)}:${value(min)}:${value(sec)} <sub style="font-size:1.5rem">PM</sub>`
         }
         else {
-            print.innerText = `${value(hr % 12 || 12)}:${value(min)}:${value(sec)} AM`
+            print.innerText = `${value(hr % 12 || 12)}:${value(min)}:${value(sec)} <sub style="font-size:1.5rem">PM</sub>`
         }
 
         console.log(hr, min, sec)
